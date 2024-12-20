@@ -6,6 +6,7 @@ test("POM",async ({page})=>
     const mainpage = new Mainpage(page)
     await mainpage.navigateToURL();
     await mainpage.PrintAllLinks();
+    await mainpage.OrderPlacingBestSellerProducts();
 
   
 })

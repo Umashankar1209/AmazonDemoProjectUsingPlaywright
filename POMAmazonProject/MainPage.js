@@ -1,47 +1,38 @@
-const { CartPage } = require("./CartPage");
-
-exports.Mainpage = 
-class MainPage
-{
-    constructor(page)
-    {
-        this.page=page;
-        this.mainpageURL="https://www.amazon.in/"
-        this.links ='//a'
-        this.allbutton="//i[@class='hm-icon nav-sprite']"
-        this.bestsellerbutton="//ul[@class='hmenu hmenu-visible']//a[@class='hmenu-item'][normalize-space()='Best Sellers']"
-        this.firstproductinhomeimprovement="//div[@id='anonCarousel1']//li[@aria-posinset='1']"
-    }
-    async navigateToURL()
-    {
-        await this.page.goto(this.mainpageURL);
+import { expect } from '@playwright/test';
+exports.MainPage = class MainPage {
+    constructor(page) {
+        this.page = page;
+        this.mainPageURL = "https://www.amazon.in/";
+        this.allLinks = 'a';
+        this.allButton = "//i[@class='hm-icon nav-sprite']";
+        this.bestSellerButton = "//ul[@class='hmenu hmenu-visible']//a[@class='hmenu-item'][normalize-space()='Best Sellers']";
+        
     }
 
-    async PrintAllLinks()
-{
-    const alllinks = await this.page.locator(this.links);
-        const count = await alllinks.count(); // Get the number of links
+    // Navigate to the main page
+    async navigateToURL() {
+        await this.page.goto(this.mainPageURL);
+        await expect(this.page).toHaveURL(this.mainPageURL);
+    }
 
-        for (let i = 0; i < count; i++)
-        {
-            const linkText = await alllinks.nth(i).textContent(); // Access each link by index
-            console.log(linkText); // Print the link text
+    // Print all link texts on the page
+    async printAllLinks() {
+        const allLinks = await this.page.locator(this.allLinks);
+        const count = await allLinks.count();
+
+        console.log(`Total links found: ${count}`);
+        for (let i = 0; i < count; i++) {
+            const linkText = await allLinks.nth(i).textContent();
+            console.log(linkText);
         }
-    //await this.page.close();
-}
-//Placing an order for the first product in all "Best Seller" sections.
-async OrderPlacingBestSellerProducts()
-{
-     await this.page.waitForSelector(this.allbutton);
-      await this.page.locator(this.allbutton).click();
-      await this.page.locator(this.bestsellerbutton).click();
-      //bestseller in home improvement
-      await this.page.locator(this.firstproductinhomeimprovement).click();
-      await this.page.locator(this.CartPage)
-      
-}
-}
+    }
 
-
-
-
+    // Place an order for the first Best Seller product
+    async ClickOnBestSellerPage()
+    {
+        await this.page.waitForSelector(this.allButton);
+        await this.page.locator(this.allButton).click();
+        await this.page.locator(this.bestSellerButton).click();
+    }
+    
+};

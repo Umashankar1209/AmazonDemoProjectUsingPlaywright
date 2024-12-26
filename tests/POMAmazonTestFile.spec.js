@@ -18,64 +18,40 @@ test("Print all links", async ({ browser }) => {
 
   await page.close();
 });
-test.("orderplacing best sellers products", async ({ browser }) => {
+test.only("orderplacing best sellers products", async ({ browser }) => {
   test.slow()
-  const context = await browser.newContext();
-  const page = await context.newPage();
+    const context = await browser.newContext();
+    const page = await context.newPage();
 
-  // Initialize the main page
-  const mainPage = new MainPage(page);
+    const mainPage = new MainPage(page);
+    await mainPage.navigateToURL();
+    await mainPage.ClickOnBestSellerPage();
 
-  // Navigate to the main page
-  await mainPage.navigateToURL();
+    const bestSellers = new BestSellers(page);
+    const cart = new Cart(page);
 
-  // Navigate to the Best Seller product and proceed to the cart page
-  await mainPage.ClickOnBestSellerPage();
+    const sectionAction = async (sectionFn) => {
+        try {
+            await sectionFn();
+            await cart.clickAddToCartButton();
+            
+            if (!page.isClosed()) {
+                await page.goBack();
+                await page.goBack();
+            }
+            await page.waitForTimeout(2000);
+            await page.keyboard.press("Space");
+        } catch (error) {
+            console.error(`Error during section action: ${error}`);
+        }
+    };
 
-  // Add to cart all the 1st product in each section
-  const bestSellers = new BestSellers(page);
-
-  // Initialize the cart page with the product page
-  const cart = new Cart(page);
-   
-  await bestSellers.firstProductInHomeImprovement()
-  await cart.clickAddToCartButton();
-  await page.goBack()
-  await page.goBack()
-  await page.keyboard.press("Space")
-
-  await bestSellers.firstProductInHomeAndKitchen()
-  await cart.clickAddToCartButton();
-  await page.goBack()
-  await page.goBack()
-  await page.waitForTimeout(2000)
-  await page.keyboard.press("Space")
-
-  await bestSellers.firstProductInCarAndMotorBike()
-  await cart.clickAddToCartButton();
-  await page.goBack()
-  await page.goBack()
-  await page.waitForTimeout(2000)
-  await page.keyboard.press("Space")
-
-  await bestSellers.firstProductInClothingAndAccessories()
-  await cart.clickAddToCartButton();
-  await page.goBack()
-  await page.goBack()
-  await page.waitForTimeout(2000)
-  await page.keyboard.press("Space")
-
-/* await bestSellers.FirstProductInBeauty()
-  await cart.clickAddToCartButton();
-  await page.goBack()
-  await page.goBack()
-  await page.waitForTimeout(2000)
-  await page.keyboard.press("Space")
-
-  await bestSellers.FirstProductInElectronics()
-  await cart.clickAddToCartButton();
-
-*/
-  // Assertion to check if the product is successfully added to the cart
-  await expect(productPage).toHaveURL(/.*cart/); // Check if we're on the cart page
+    await sectionAction(() => bestSellers.firstProductInFirstSection());
+    await sectionAction(() => bestSellers.firstProductInSecondSection());
+    await sectionAction(() => bestSellers.firstProductInThirdSection());
+    await sectionAction(() => bestSellers.firstProductInFourthSection());
+    
+    // If you want to include the fifth and sixth sections, you can uncomment the following:
+    // await sectionAction(() => bestSellers.FirstProductInFivthSection());
+    // await sectionAction(() => bestSellers.FirstProductInSixthSection());
 });

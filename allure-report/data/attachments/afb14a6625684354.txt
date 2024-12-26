@@ -1,0 +1,8 @@
+locator.hover: Test ended.
+Call log:
+  - waiting for locator('//input[@id=\'add-to-cart-button\']')
+
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:52:5
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed

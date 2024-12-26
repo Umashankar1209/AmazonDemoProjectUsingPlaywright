@@ -1,0 +1,8 @@
+Error interacting with the product in Third Section: TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel3\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+
+Error clicking Add to Cart button: Error: page.isEnabled: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//input[@id=\'add-to-cart-button\']')
+

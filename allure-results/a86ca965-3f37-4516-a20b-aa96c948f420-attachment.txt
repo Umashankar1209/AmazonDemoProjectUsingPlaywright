@@ -1,0 +1,136 @@
+Error interacting with the product in the section: TypeError: value.includes is not a function
+locator.hover: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('//input[@id=\'add-to-cart-button\']')
+
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:49:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@13',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 16,
+      column: 59,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "locator.hover(//input[@id='add-to-cart-button'])",
+    apiName: 'locator.hover',
+    params: { selector: "//input[@id='add-to-cart-button']", strict: true },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735212084557,
+    error: {
+      message: 'Error: locator.hover: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//input[@id=\\'add-to-cart-button\\']')\x1B[22m\n",
+      stack: 'Error: locator.hover: Target page, context or browser has been closed\n' +
+        'Call log:\n' +
+        "\x1B[2m  - waiting for locator('//input[@id=\\'add-to-cart-button\\']')\x1B[22m\n" +
+        '\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:16:59)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:49:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:50:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@16',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 16,
+      column: 59,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "locator.hover(//input[@id='add-to-cart-button'])",
+    apiName: 'locator.hover',
+    params: { selector: "//input[@id='add-to-cart-button']", strict: true },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735212084600,
+    error: {
+      message: 'Error: locator.hover: Target page, context or browser has been closed',
+      stack: 'Error: locator.hover: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:16:59)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:50:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:51:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@19',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 16,
+      column: 59,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "locator.hover(//input[@id='add-to-cart-button'])",
+    apiName: 'locator.hover',
+    params: { selector: "//input[@id='add-to-cart-button']", strict: true },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735212084625,
+    error: {
+      message: 'Error: locator.hover: Target page, context or browser has been closed',
+      stack: 'Error: locator.hover: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:16:59)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:51:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:52:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@22',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 16,
+      column: 59,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "locator.hover(//input[@id='add-to-cart-button'])",
+    apiName: 'locator.hover',
+    params: { selector: "//input[@id='add-to-cart-button']", strict: true },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735212084635,
+    error: {
+      message: 'Error: locator.hover: Target page, context or browser has been closed',
+      stack: 'Error: locator.hover: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:16:59)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:52:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed

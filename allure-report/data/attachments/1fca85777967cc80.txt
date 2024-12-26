@@ -1,0 +1,28 @@
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 26900,
+  [Symbol(trigger_async_id_symbol)]: 21541,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 69622,
+  [Symbol(trigger_async_id_symbol)]: 69158,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 115331,
+  [Symbol(trigger_async_id_symbol)]: 114985,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 161049,
+  [Symbol(trigger_async_id_symbol)]: 160705,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.

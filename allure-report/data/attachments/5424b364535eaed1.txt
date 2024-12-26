@@ -1,0 +1,12 @@
+Error interacting with the product in Second Section: TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel2\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+
+Error interacting with the product in Third Section: TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel3\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+
+Error interacting with the product in Fourth Section: TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel4\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+

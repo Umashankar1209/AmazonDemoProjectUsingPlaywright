@@ -1,0 +1,28 @@
+Error interacting with the product in the section: Error: locator.click: Test ended.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel1\']//li[@aria-posinset=\'1\']//a)[1]')
+    - locator resolved to <a tabindex="-1" aria-hidden="true" class="a-link-normal aok-block" href="/SOFTSPUN-Microfiber-Cleaning-Detailing-Polishing/dp/B077BFH786/ref=zg_bs_c_automotive_d_sccl_1/262-6219210-7389435?pd_rd_w=1mXd8&content-id=amzn1.sym.cde02f8b-0594-439d-9e93-f4cced7ce3ce&pf_rd_p=cde02f8b-0594-439d-9e93-f4cced7ce3ce&pf_rd_r=NSEE6T30119DJNFV4RMW&pd_rd_wg=vp0sx&pd_rd_r=7132f442-a399-4065-aa18-5bf94e0bb02f&pd_rd_i=B077BFH786&psc=1">…</a>
+
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:49:5
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:50:5
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:51:5
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+locator.hover: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:16:59)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:52:5
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed

@@ -18,7 +18,7 @@ test("Print all links", async ({ browser }) => {
 
   await page.close();
 });
-test.only("orderplacing best sellers products", async ({ browser }) => {
+test.("orderplacing best sellers products", async ({ browser }) => {
   test.slow()
   const context = await browser.newContext();
   const page = await context.newPage();

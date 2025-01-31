@@ -6,36 +6,37 @@ class Cart
         this.page = page;
         this.addToCartButton = "//input[@id='add-to-cart-button']";
         this.freshAddToCartButton = "//input[@aria-labelledby='freshAddToCartButton-announce']";
-        this.CardAddToCartButton="//span[@id='a-autoid-0']"
+        this.CardAddToCartButton = "//span[@id='a-autoid-0']";
     }
-
+    
     async clickAddToCartButton() {
-
         try {
-            // Attempt to hover over and check the Add to Cart button
-            await this.page.locator(this.addToCartButton).hover();
+            // Check if the Add to Cart button is visible
             const isAddToCartButtonVisible = await this.page.isVisible(this.addToCartButton);
-        
+            
             if (isAddToCartButtonVisible) {
                 // Click the Add to Cart button if visible
                 await this.page.locator(this.addToCartButton).click();
                 console.log("Product added to cart using Add to Cart button.");
             } else {
                 // If Add to Cart button is not visible, check for Fresh Add to Cart button
-                await this.page.locator(this.freshAddToCartButton).hover();
                 const isFreshAddToCartButtonVisible = await this.page.isVisible(this.freshAddToCartButton);
-        
+                
                 if (isFreshAddToCartButtonVisible) {
                     // Click the Fresh Add to Cart button if visible
                     await this.page.locator(this.freshAddToCartButton).click();
                     console.log("Product added to cart using Fresh Add to Cart button.");
                 } else {
-                            console.log("skiping to next step");
-
-                    //await this.page.locator(this.CardAddToCartButton).hover();
-                     //await this.page.locator(this.CardAddToCartButton).click();
-
+                    // If neither the Add to Cart nor Fresh Add to Cart button is visible, check for Card Add to Cart button
+                    const isCardAddToCartButtonVisible = await this.page.isVisible(this.CardAddToCartButton);
                     
+                    if (isCardAddToCartButtonVisible) {
+                        // Click the Card Add to Cart button if visible
+                        await this.page.locator(this.CardAddToCartButton).click();
+                        console.log("Product added to cart using Card Add to Cart button.");
+                    } else {
+                        console.log("No Add to Cart button found. Skipping to the next step.");
+                    }
                 }
             }
         } catch (error) {
@@ -46,6 +47,6 @@ class Cart
         
         // Wait for 2 seconds after the interaction
         await this.page.waitForTimeout(2000);
+    }
         
-}
 }

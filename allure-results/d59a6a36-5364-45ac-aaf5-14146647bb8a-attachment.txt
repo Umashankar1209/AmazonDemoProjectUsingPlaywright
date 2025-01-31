@@ -1,0 +1,4 @@
+Product added to cart using Add to Cart button.
+skiping to next step
+skiping to next step
+Error interacting with the product. Skipping to the next one...

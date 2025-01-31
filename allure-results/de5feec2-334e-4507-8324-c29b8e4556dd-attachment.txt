@@ -1,0 +1,39 @@
+Error interacting with the product in the section: TimeoutError: page.waitForSelector: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel3\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+Call log:
+  - waiting for locator('xpath=(//div[@id=\'anonCarousel4\']//li[@aria-posinset=\'1\']//a)[1]') to be visible
+
+keyboard.press: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:15:38)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:52:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@49',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 15,
+      column: 38,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: 'keyboard.press(Space)',
+    apiName: 'keyboard.press',
+    params: { key: 'Space' },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735223957938,
+    error: {
+      message: 'Error: keyboard.press: Target page, context or browser has been closed',
+      stack: 'Error: keyboard.press: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:15:38)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:52:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed

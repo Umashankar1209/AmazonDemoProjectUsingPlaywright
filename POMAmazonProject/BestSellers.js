@@ -14,17 +14,13 @@ class BestSellers
     // Refactor to reduce redundancy
     async selectFirstProductInSection(sectionLocator) {
         try {
-            await this.page.waitForSelector(sectionLocator, { state: 'visible', timeout: 5000 });
-            const value = this.page.locator(sectionLocator).textContent();
-            console.log(value)
-            /*if(value.includes('Card'))
-            {
-                return;
-            }*/
+            await this.page.waitForSelector(sectionLocator);
             const isProductVisible = await this.page.isVisible(sectionLocator);
             if (isProductVisible) {
                 await this.page.locator(sectionLocator).hover();
                 await this.page.locator(sectionLocator).click();
+                await this.page.waitForTimeout(1000)
+                await this.page.keyboard.press('Space');
             } else {
                 console.log(`Product in the section is not visible.`);
             }

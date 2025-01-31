@@ -1,0 +1,10 @@
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 28200,
+  [Symbol(trigger_async_id_symbol)]: 22200,
+  [Symbol(kResourceStore)]: undefined
+}
+skiping to next step
+skiping to next step
+Error interacting with the product. Skipping to the next one...
+Error interacting with the product. Skipping to the next one...

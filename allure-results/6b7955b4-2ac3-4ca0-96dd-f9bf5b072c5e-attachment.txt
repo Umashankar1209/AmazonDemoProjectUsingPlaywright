@@ -1,0 +1,4 @@
+No Add to Cart button found. Skipping to the next step.
+Product added to cart using Card Add to Cart button.
+No Add to Cart button found. Skipping to the next step.
+No Add to Cart button found. Skipping to the next step.

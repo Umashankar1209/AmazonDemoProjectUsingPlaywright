@@ -1,0 +1,22 @@
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 25931,
+  [Symbol(trigger_async_id_symbol)]: 20564,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 73952,
+  [Symbol(trigger_async_id_symbol)]: 73587,
+  [Symbol(kResourceStore)]: undefined
+}
+Product added to cart using Add to Cart button.
+Promise {
+  <pending>,
+  [Symbol(async_id_symbol)]: 120245,
+  [Symbol(trigger_async_id_symbol)]: 119904,
+  [Symbol(kResourceStore)]: undefined
+}
+Error interacting with the product. Skipping to the next one...
+Error interacting with the product. Skipping to the next one...

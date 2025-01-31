@@ -1,0 +1,128 @@
+Error interacting with the product in the section: Error: page.waitForTimeout: Target page, context or browser has been closed
+page.isVisible: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:15:62)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:49:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@16',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 15,
+      column: 62,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "page.isVisible(//input[@id='add-to-cart-button'])",
+    apiName: 'page.isVisible',
+    params: { selector: "//input[@id='add-to-cart-button']" },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735225720029,
+    error: {
+      message: 'Error: page.isVisible: Target page, context or browser has been closed',
+      stack: 'Error: page.isVisible: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:15:62)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:49:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+page.isVisible: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:15:62)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:50:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@19',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 15,
+      column: 62,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "page.isVisible(//input[@id='add-to-cart-button'])",
+    apiName: 'page.isVisible',
+    params: { selector: "//input[@id='add-to-cart-button']" },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735225720112,
+    error: {
+      message: 'Error: page.isVisible: Target page, context or browser has been closed',
+      stack: 'Error: page.isVisible: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:15:62)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:50:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+page.isVisible: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:15:62)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:51:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@22',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 15,
+      column: 62,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "page.isVisible(//input[@id='add-to-cart-button'])",
+    apiName: 'page.isVisible',
+    params: { selector: "//input[@id='add-to-cart-button']" },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735225720173,
+    error: {
+      message: 'Error: page.isVisible: Target page, context or browser has been closed',
+      stack: 'Error: page.isVisible: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:15:62)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:51:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
+Error interacting with the product in the section: Error: page.waitForSelector: Target page, context or browser has been closed
+page.isVisible: Target page, context or browser has been closed
+    at Cart.clickAddToCartButton (D:\AmazonDemoProject\POMAmazonProject\Cart.js:15:62)
+    at sectionAction (D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:36:24)
+    at D:\AmazonDemoProject\tests\POMAmazonTestFile.spec.js:52:5 {
+  [Symbol(step)]: {
+    stepId: 'pw:api@25',
+    location: {
+      file: 'D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js',
+      line: 15,
+      column: 62,
+      function: 'Cart.clickAddToCartButton'
+    },
+    category: 'pw:api',
+    title: "page.isVisible(//input[@id='add-to-cart-button'])",
+    apiName: 'page.isVisible',
+    params: { selector: "//input[@id='add-to-cart-button']" },
+    boxedStack: undefined,
+    steps: [],
+    complete: [Function: complete],
+    endWallTime: 1735225720200,
+    error: {
+      message: 'Error: page.isVisible: Target page, context or browser has been closed',
+      stack: 'Error: page.isVisible: Target page, context or browser has been closed\n' +
+        '    at Cart.clickAddToCartButton (D:\\AmazonDemoProject\\POMAmazonProject\\Cart.js:15:62)\n' +
+        '    at sectionAction (D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:36:24)\n' +
+        '    at D:\\AmazonDemoProject\\tests\\POMAmazonTestFile.spec.js:52:5',
+      cause: undefined
+    }
+  }
+}
+Error during section action: Error: page.waitForTimeout: Target page, context or browser has been closed
